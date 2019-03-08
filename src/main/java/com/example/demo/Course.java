@@ -28,6 +28,10 @@ public class Course {
     private String description;
 
     @NotNull
+    private String photo;
+
+
+    @NotNull
     @Min(3)
     private int credit;
 
@@ -61,6 +65,14 @@ public class Course {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(String photo) {
+        this.photo = photo;
     }
 
     public int getCredit() {

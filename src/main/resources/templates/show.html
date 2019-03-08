@@ -14,16 +14,12 @@
 </div>
 
 
-
-
-
     <a href="/">Show All Courses</a><br />
         Title :<span th:text="${course.title}" ></span><br />
         Instructor :<span th:text="${course.instructor}" ></span><br />
         Description :<span th:text="${course.description}" ></span><br />
         Credits :<span th:text="${course.credit}" ></span><br />
     <a href="@{/delete/{id}(id=${course.id})}">Delete this Courses</a>
-
 
 
 <span th:replace="base :: jslinks"></span>
